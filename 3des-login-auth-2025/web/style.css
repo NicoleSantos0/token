@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f0ff; /* Fundo lilás claro */
+    color: #2d1a36; /* Roxo escuro para texto */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #6a3093; /* Roxo médio */
+    color: white;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #4b2a6a; /* Roxo mais escuro */
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.container, .login-container, .card {
+    max-width: 640px;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(106, 48, 147, 0.1); /* Sombra roxa sutil */
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.container:hover, .login-container:hover, .card:hover {
+    box-shadow: 0 12px 40px rgba(106, 48, 147, 0.15);
+    transform: translateY(-2px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #5e3a7e; /* Roxo médio */
+    font-size: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d9c2ff;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #faf5ff; /* Lilás muito claro */
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+    border-color: #b388ff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(179, 136, 255, 0.3);
+}
+
+button, .login-button, .logout-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #7b4cbf; /* Roxo vibrante */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, .login-button:hover, .logout-button:hover {
+    background-color: #6a3093; /* Roxo mais escuro */
+    transform: scale(1.02);
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 1.5rem;
+    background-color: #e6d6ff; /* Lilás claro */
+    font-size: 14px;
+    color: #5e3a7e;
+}
+
+.posts-container {
+    margin-top: 50px;
+}
+
+.post {
+    background-color: #ffffff;
+    padding: 24px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    border-left: 6px solid #7b4cbf; /* Roxo vibrante */
+    box-shadow: 0 3px 10px rgba(123, 76, 191, 0.1);
+}
